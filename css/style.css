@@ -1,0 +1,80 @@
+@charset "UTF-8";
+
+* {margin: 0; padding: 0; list-style: none; text-decoration: none; color: #222; box-sizing: border-box;}
+
+
+
+.wrap {width: 1200px; height: 700px; margin: 0 auto; }
+
+header {width: 1200px; height: 100px; background: #000;}
+.slide {width: 1200px; height: 300px; background: #000; position: relative;}
+section {width: 1200px; height: 200px;}
+footer {width: 1200px; height: 100px; background: #000;}
+
+header h1 {width: 180px; height: 100px; float: left; }
+header h1 img {width: 120px; margin: 10px;}
+header nav {width: 800px; height: 100px; float: right; }
+
+header nav li {width: 200px; height: 100px; float: left; text-align: center; line-height: 100px; font-size: 24px; }
+header nav li a {color: #fff; display: block;}
+header nav li:hover {background: #fff;}
+header nav .gnb > li:hover > a {color: #000;}
+
+
+header nav li .lnb {position: absolute; width: 200px; background: #000; height: 0; overflow: hidden; transition: 0.3s; z-index: 2; }
+header nav li:hover .lnb {height: 180px;}
+header nav li .lnb li {height: 60px; line-height: 60px; font-size: 20px;}
+header nav li .lnb li:hover a {color: #000;}
+
+
+/* slide */
+.slide ul {width: 1200px; height: 300px;}
+.slide ul li {width: 1200px; height: 300px; position: absolute; display: none;}
+
+
+/* section */
+section > div {width: 400px; height: 200px; float: left; }
+
+.board_box .title_box {width: 400px; height: 40px; }
+.board_box .title_box h2 {width: 100px; height: 40px; font-size: 24px;  float: left; text-align: center;}
+.board_box .title_box h2.on a {color: #0d9159;}
+
+.board_box .content_box {width: 400px; height: 160px; }
+.notice {}
+.notice li {width: 400px; height: 40px; line-height: 40px; border-bottom: 1px solid #ddd;}
+.notice li .title {width: 300px; height: 40px; float: left;}
+.notice li .date {width: 100px; height: 40px; float: right;}
+
+.gallery {width: 400px; height: 160px; display: none;}
+.gallery li {width: 120px; height: 120px; float: left; margin-right: 10px;}
+.gallery li img {width: 120px;}
+
+
+.banner_box h2 {width: 400px; height: 40px;}
+.banner_box ul {width: 400px; height: 160px; }
+.banner_box ul li {width: 400px; height: 50px; border-bottom: 1px solid #ddd; line-height: 50px;}
+.banner_box ul li img {width: 25px; float: left; margin: 10px;}
+.banner_box ul li div {width: 320px; height: 50px; float: left;}
+
+
+.baro_box h2 {width: 400px; height: 40px;}
+.baro_box ul {width: 400px; height: 160px;}
+.baro_box ul li {width: 90px; height: 120px; float: left; margin: 4px;}
+.baro_box ul li .icon {width: 90px; height: 70px; background: #000;}
+.baro_box ul li .icon img {width: 50px; margin: 10px 0 0 20px;}
+
+
+/* footer */
+footer h1 {width: 180px; height: 100px; float: left; }
+footer h1 img {width: 120px; margin: 10px;}
+footer .info {width: 900px; height: 100px; float: right;}
+footer .info .menu {width: 900px; height: 40px;}
+footer .info .menu a {width: 150px; height: 40px; line-height: 40px; float: left; color: #fff;}
+footer .info .copy {width: 900px; height: 60px; color: #fff;}
+
+
+/* popup */
+.popup {width: 400px; height: 300px; background: #101701; position: absolute; top: 200px; left: 600px; padding: 20px; display: none;}
+.popup h2 {color: #b7e525; margin-bottom: 20px;}
+.popup div {color: #fff; font-size: 18px;}
+.popup a {position: absolute; right: 20px; bottom: 20px; background: #b7e525; width: 100px; height: 50px; font-size: 20px; text-align: center;line-height: 50px;}
